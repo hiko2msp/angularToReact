@@ -19,6 +19,7 @@ export class HelloComponent implements OnInit, OnDestroy {
   date = new Date();
   hello = () => {
     console.log('hello')
+    return () => { }
   }
 
   constructor(private logger: LoggerService) {
@@ -26,9 +27,9 @@ export class HelloComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    console.log('hello', this.date);
+    console.log('in on init', this.date);
   }
   ngOnDestroy() {
-    console.log('hello', this.date);
+    console.log('in on destroy', this.date);
   }
 }

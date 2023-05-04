@@ -16,7 +16,6 @@ node convert.js
 
 # 残りの課題
 
-+ rxjsの依存をなくす
++ rxjsの依存をなくす -> 難しいので諦めた
 + 別のファイルにあるテンプレートをJSXに置き換える
-+ ライフサイクルフックをuseEffectに置き換える
 + DependencyInjectionの扱い
